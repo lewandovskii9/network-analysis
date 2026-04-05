@@ -1,7 +1,7 @@
 # SOC Network Analysis Portfolio — Wireshark Investigations
 
-Aspiring SOC Analyst focused on network traffic analysis and incident investigation.
-This repository contains hands-on PCAP analysis simulating real-world malware infections.
+Aspiring SOC Analyst focused on network traffic analysis and incident investigation.  
+This repository contains a series of PCAP analysis write-ups. As the series progresses, the write-ups demonstrate increasing depth, improved methodology, and a more professional approach to incident investigation, reflecting my growth in SOC-style reporting and malware analysis.
 
 ---
 
@@ -25,6 +25,8 @@ This repository contains hands-on PCAP analysis simulating real-world malware in
 ---
 
 ## 📁 Investigation Cases
+
+This section contains all network traffic analysis write-ups. As the series progresses, later write-ups demonstrate more thorough methodology, clearer evidence presentation, and a more professional reporting style.
 
 | #  | Case                                                        | Key Findings                                              | Malware |
 | -- | ----------------------------------------------------------- | --------------------------------------------------------- | ------- |
