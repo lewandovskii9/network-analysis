@@ -22,25 +22,25 @@ Answer :
 
 1) IP address of the infected Windows host : 172.17.8.109. Because initiates outbound connections to external IPs on non-standard ports (8000, 3389) , anomalous behavior for a workstation.
    We can see it by statistics of conversation : 
-   ![conversations](img/01-conversations.png)
+   ![conversations](evidence/01-conversations.png)
    We can see that our LAN IP address is exchanging traffic with several external ip addresses.
 
 2) MAC address of infected Windows host : 172.17.8.109 is 14:fe:b5:d4:15:ca(Dell)
-   ![mac-address](img/02-mac-address.png)
+   ![mac-address](evidence/02-mac-address.png)
    We can see MAC address of our infected machine by applying filter(Filter applied: ip.addr == 172.17.8.109) that shows any communication between our infected IP address machine. And exploring any packet we can see at ethernet 2 section MAC address. 
 
 3) host name of the infected Windows host : DUNN-WINDOWS-PC
-   ![nbns-hostname](img/03-nbns-hostname.png)
+   ![nbns-hostname](evidence/03-nbns-hostname.png)
 We can see host name by applying filter nbns that shows workstation naming in LAN. And further applying our victims IP address.
 
 4) Windows user account name for the infected Windows host is margaret.dunn.
-   ![kerberos-user](img/04-kerberos-user.png)
+   ![kerberos-user](evidence/04-kerberos-user.png)
    We can see it by applying kerberos filters, i want to explain why i added additional filter to kerberos doesnt show user with $ , because i saw before many as-requests that show pc name, not user that i want to find. Here is sample below:
-   ![kerberos-pc](img/05-kerberos-pc.png)
+   ![kerberos-pc](evidence/05-kerberos-pc.png)
 
 5) SHA256: 9f6e3e65aedca997c6445329663bd1d279392a34cfda7d1b56461eb41641fa08, 
    File name: DirecPLL.DLL 56/72 vendors flagged as malicious on VirusTotal : 
-   ![virustotal](img/06-virustotal.png)
+   ![virustotal](evidence/06-virustotal.png)
 
 6) Type of infection: Dridex Trojan 
    Evidence:
