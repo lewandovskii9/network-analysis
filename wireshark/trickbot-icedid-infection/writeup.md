@@ -31,36 +31,39 @@ Answer the following questions:
 in destination (10.2.23.231 →  46.249.62[.]199, port 80) by applying (**ip.addr == 10.2.23.231 && ip.addr == 46.249.62[.]199**) and following any packet tcp stream we can see suspicious actions with MZ tag , its (EXE or DLL program because always first bytes of this files shows as MZ) malicious actions confirms that its infected.
 ![evi2](evidence/02-02.png)
 
-and also with inspectig IDs alerts it confirms that IP **10.2.23.231** is infected, there is malicious program downloading that relates with our LAN pc  : 
+and also with inspectig IDs alerts it confirms that IP **10.2.23.231** is infected, there is malicious program downloading that relates with our LAN pc :
+
 ![evi3](evidence/02-03.png)
+
 ### 2) 
 in any traffic exchange that relates with our infected pc , by further inspection of any package we can find that our infected PC MAC address is  **00:11:0a:9f:c0:2d(HewlettPacka_9f:c0:2d)** : 
-![[Pasted image 20260325234405.png]]
+![evi4](evidence/02-04.png)
+
 ### 3) 
 by appling (nbns and ip.addr == 10.2.23.231) , by investigation of first package we now see host name of victim PC.
 Host name of the infected Windows : **FERGUSON-WIN-PC**
-![[Pasted image 20260401153738.png]]
+![evi5](evidence/02-05.png)
 ### 4)
 by applying filter `kerberos.CNameString and !(kerberos.CNameString contains "$")`, after digging into frame details we find out user account name which is : **ruby.ferguson**  ,also i added `!(kerberos.CNameString contains "$")` filter to display only user accounts, because computer accounts always end with `"$"`.
-![[Pasted image 20260401154504.png]]
+![evi6](evidence/02-06.png)
 ### 5)
 We can download them from Export Objects → HTTP but there is a problem a lot of unnecessary stuff : 
-![[Pasted image 20260401162455.png]]
+![evi7](evidence/02-07.png)
 
 even by looking for with filter we cant find only 3 files : 
-![[Pasted image 20260401162522.png]]
+![evi8](evidence/02-08.png)
 
 Lets move in other way with filters of GET requests, by applying `http.request.method == "GET" && ip.src == 10.2.23.231` we see several requests to download some stuff :
 
-![[Pasted image 20260401162822.png]]
+![evi9](evidence/02-09.png)
 
 They are all look suspicious (except msdownload it is essential process of windows system) , and by investigating them, we find malicious executable tag `MZ` in packages(3119 `troll1.jpg`, 6249`Tinx86_14.exe`, 6262`Sw9JKmXqaSj.exe`, 10966 `win.png`, 11986 `tin.png`, 20146 `sin.png` )
 example : 
-![[Pasted image 20260401161845.png]]
+![evi10](evidence/02-10.png)
 
 With moving back to step downloading files in Export Objects → HTTP , download files by names 
 and confirm that this files is executable programs : 
-![[Pasted image 20260403003303.png]]
+![evi11](evidence/02-11.png)
 After investigation we can confirm and see that they are executable.
 
 Six URLs delivering executable files were identified via HTTP GET requests:
@@ -74,7 +77,7 @@ Their URLs :
 
 ### 6)
 Six hashes : 
-![[Pasted image 20260403005438.png]]
+![evi12](evidence/02-12.png)
 3abae6dd2ddae23b2de2ccbcc160a4a5773bef8934d0e6896d50197c3d3c417f  sin.png
 d43159c8bf2e1bd866abdbb1687911e2282b1f98a7c063f85ffd53a7f51efed4  Sw9JKmXqaSj.exe
 4c957072ab097d3474039f432466cd251d1dc7d91559b76d4e5ead4a8bd499d5  tin.png
@@ -85,38 +88,38 @@ f1b789be1126b557240dd0dfe98fc5f3ad6341bb1a5d8be0a954f65b486ad32a  Tinx86_14.exe
 by checking them on VirusTotal to malicousness, we can confirm that they are infections:
 
 **1 -**  `sin.png` : 
-![[Pasted image 20260403005745.png]]
+![evi13](evidence/02-13.png)
 
 Our first file is trojan, trickbot. 62/72 of Vendors confirm that it is infection
 
 **2 -** `Sw9JKmXqaSj` : 
-![[Pasted image 20260403010111.png]]
+![evi14](evidence/02-14.png)
 
 Second file is also trojan, jaik. 59/72 of Vendors confirm that it is infection.
 
 **3 -** `tin.png`
-![[Pasted image 20260403010306.png]]
+![evi15](evidence/02-15.png)
 
 Third file is also trojan, barys. 61/70  of Vendors confirm that it is infection.
 
 **4 -** `Tinx86_14.exe`
-![[Pasted image 20260403010457.png]]
+![evi16](evidence/02-16.png)
 
  Fourth file is also trojan, dump . 57/72 of Vendors confirm that it is infection.
 
 **5 -** `troll1.jpg(melodium.exe)`
-![[Pasted image 20260403010642.png]]
+![evi17](evidence/02-17.png)
  Fifth file is also trojan, ponystealer.  62/71 of Vendors confirm that it is infection.
 **6 -** `win.png`
-![[Pasted image 20260403010900.png]]
+![evi18](evidence/02-18.png)
 Sixth file is also trojan, trickbot .  63/72 of Vendors confirm that it is infection.
 
 ### 7)
 Based on investigation of IDs alerts, we can confirm 2 infections on 1st evidence it displays Trickbot infection , and on 2nd evidence it displays IcedID infection.
 
 Evidences : 
-1) ![[Pasted image 20260403012032.png]]
-2) ![[Pasted image 20260403012142.png]]
+1) ![evi19](evidence/02-19.png)
+2) ![evi20](evidence/02-20.png)
 
 ## IOCs
 
