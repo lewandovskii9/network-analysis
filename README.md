@@ -29,7 +29,7 @@ This repository contains hands-on PCAP analysis simulating real-world malware in
 | #  | Case                                                        | Key Findings                                              | Malware |
 | -- | ----------------------------------------------------------- | --------------------------------------------------------- | ------- |
 | 01 | [Dridex Infection](./wireshark/dridex-infection/writeup.md) | Malicious HTTP download → PE file execution → C2 over TLS | Dridex  |
-
+| 02 | [Trickbot & IcedID Infection](./wireshark/trickbot-icedid-infection/writeup.md) | 6 executables disguised as images → dual infection | Trickbot, IcedID |
 ---
 
 ## 🔍 What Each Case Includes
@@ -51,9 +51,9 @@ This repository contains hands-on PCAP analysis simulating real-world malware in
 
 ---
 
-## 📜 Certifications in Progress
+## 📜 Certifications
 
-* CompTIA Security+
+* CompTIA Security+ (expected August 2026)
 
 ---
 
