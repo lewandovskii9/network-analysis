@@ -27,12 +27,12 @@ Answer the following questions:
 
 ### 1) 
 **Infected PC, ip address is :** 10.2.23.231, by analyzing statistics of conversation, with further inspecting we can see its infected : 
-![[Pasted image 20260325230908.png]]
+![evi1](evidence/02-01.png)
 in destination (10.2.23.231 →  46.249.62[.]199, port 80) by applying (**ip.addr == 10.2.23.231 && ip.addr == 46.249.62[.]199**) and following any packet tcp stream we can see suspicious actions with MZ tag , its (EXE or DLL program because always first bytes of this files shows as MZ) malicious actions confirms that its infected.
-![[Pasted image 20260325232630.png]]
+![evi2](evidence/02-02.png)
 
 and also with inspectig IDs alerts it confirms that IP **10.2.23.231** is infected, there is malicious program downloading that relates with our LAN pc  : 
-![[Pasted image 20260325233926.png]]
+![evi3](evidence/02-03.png)
 ### 2) 
 in any traffic exchange that relates with our infected pc , by further inspection of any package we can find that our infected PC MAC address is  **00:11:0a:9f:c0:2d(HewlettPacka_9f:c0:2d)** : 
 ![[Pasted image 20260325234405.png]]
