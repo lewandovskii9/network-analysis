@@ -1,7 +1,7 @@
 - Link to exercise : https://www.malware-traffic-analysis.net/2019/03/19/index.html
 ### Executive summary
 
-On 2019-03-19 at 14:44:55 - 14:49:46 UTC, a Windows host(BOBBY-TIGER-PC) at IP(`10.0.90.215`) used by user(bobby.tiger) that belong to `LITTLETIGERS`, was infected with trojan (family `vbkryjetor / Remcos RAT`) and trojan Cridex/Dridex. Data of Host(`10.0.90.215`) can be compromised. Problem was solved, the host (`10.0.90.215` is isolated and prevented further Lateral Movement of infections. All data dump captured for deeper inspection and all passwords of user was reseted. 
+On 2019-03-19 at 14:44:55 - 14:49:46 UTC, a Windows host(BOBBY-TIGER-PC) at IP(`10.0.90.215`) used by user(bobby.tiger) that belong to `LITTLETIGERS`, was infected with trojan (family `vbkryjetor / Remcos RAT`) and trojan Cridex/Dridex. Data of Host(`10.0.90.215`) can be compromised. Problem was solved, the host (`10.0.90.215` is isolated and prevented further Lateral Movement of infections. All data dump captured for deeper inspection and all passwords of user was reset. 
 ## ENVIRONMENT
 
 LAN segment data:
