@@ -32,6 +32,7 @@ This section contains all network traffic analysis write-ups. As the series prog
 | -- | ----------------------------------------------------------- | --------------------------------------------------------- | ------- |
 | 01 | [Dridex Infection](./wireshark/dridex-infection/writeup.md) | Malicious HTTP download → PE file execution → C2 over TLS | Dridex  |
 | 02 | [Trickbot & IcedID Infection](./wireshark/trickbot-icedid-infection/writeup.md) | 6 executables disguised as images → dual infection | Trickbot, IcedID |
+| 03 | [Cridex/Dridex, Remcos Infection](./wireshark/dridex-remcos-withLaterMovement-infection/writeup.md) |  → Malicious HTTP download → PE file execution → C2 communication | Dridex  |
 ---
 
 ## 🔍 What Each Case Includes
