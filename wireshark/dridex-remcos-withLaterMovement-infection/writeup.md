@@ -29,42 +29,42 @@ Review the pcap and alerts, then write an incident report for this infected Wind
 - By investigation of IDs alerts, i can identify infected host is 10.0.90.215 , it is confirms by `Event#3.84655 2019-03-19 01:47 UTC` on our 1st evidence , this alert show us suspicious actions happening on from our victim (10.0.90.215) to malicious connection on (209.141.34[.]8), exe download via HTTP connection.
 
 Evidence(#1):
-![[Pasted image 20260415215334.png]]
+![evi](evidence/03-01.png)
 
 - By inspection any packet that related to infected host (10.0.90.215), and further investigation MAC address is `64:32:a8:57:2b:42 (Intel)` :
 
 Evidence(#2)
-![[Pasted image 20260416014125.png]]
+![evi](evidence/03-02.png)
 
 
 - Hostname of our victim is BOBBY-TIGER-PC that belongs to group LITTLETIGERS. By applying filter `ap.addr eq '10.0.90.215' and nbns` : 
 
 Evidence(#3)
-![[Pasted image 20260415220313.png|697]]
+![evi](evidence/03-03.png)
 
 - User account of infected host is bobby.tiger. Filter `kerberos.CNameString and !(kerberos.CNameString contains "$")`  , fast define user name of infected host :
 
 Evidence(#4)
-![[Pasted image 20260416012844.png]]
+![evi](evidence/03-04.png)
 
 - To define which infection host (10.0.90.215) was infected, and find all malicious files, i started filter on `frame contains "This program"` , and find 2 malicious files with `MZ` tag :
 Evidence(#5)
-![[Pasted image 20260416020350.png]]
+![evi](evidence/03-05.png)
 
 file 1 `test1[.]exe`:
 
 Evidence(#6)
-![[Pasted image 20260416021108.png]]
+![evi](evidence/03-06.png)
 
 file 2 `f4[.]exe` : 
 
 Evidence(#7)
-![[Pasted image 20260416021144.png]]
+![evi](evidence/03-07.png)
 
 By downloading them and investigating i find their hashes:
 
 Evidence(#8)
-![[Pasted image 20260416021655.png]]
+![evi](evidence/03-08.png)
 
 f4[.]exe hash:
 5865e801e6324166d6d05b39a14f2a8a798c6eb652831f78c2634f2b7a400eaf
@@ -75,13 +75,13 @@ test1[.]exe hash:
 And by scanning them in VirusTotal : 
 - f4[.]exe:
 Evidence(#9)  
-![[Pasted image 20260416021941.png]]
+  ![evi](evidence/03-09.png)
 File f4[.]exe is malicious and 54/71 security vendors flagged this file as malicious. And also we can identify this file as trojan Cridex which is old name for trojan Dridex, also that infection can do Lateral Movement and long - sleep to hide from detection.
 
 
 - test1[.]exe:
 Evidence(#10)
-  ![[Pasted image 20260416022615.png]]
+  ![evi](evidence/03-10.png)
 File test1[.]exe is also malicious that confrimed by 48/68 security vendors. This trojan is from (family `vbkryjetor`) also this infection hides from detection and evasion as cpu process, also this infection stays after reboot.
 
 ## Timeline
