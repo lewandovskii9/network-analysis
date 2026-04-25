@@ -1,0 +1,30 @@
+# === Windows System Files ===
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+*.lnk
+
+*.vbox
+*.vbox-prev
+*.vmdk
+*.vdi
+*.vmem
+*.log
+*.iso
+*.ova
+
+# === Obsidian & Documentation ===
+.obsidian/
+.trash/
+
+# === IDE & Tools ===
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# === Huge Data Files ===
+*.raw
+*.mem
+*.dmp
+*.evtx
