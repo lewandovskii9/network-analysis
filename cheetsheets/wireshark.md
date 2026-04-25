@@ -6,7 +6,7 @@
 * `tcp.port eq 443 or udp.port eq 53` - Find HTTPS or DNS.
 
 ## Search user-name
-* `kerberos.CNameString and !(kerberos.CNameString contains"$")`
+* `kerberos.CNameString and !(kerberos.CNameString contains"$")` - search user-name without pc name.
 
 ## Search suspicious activity
 * `tcp.flags.syn eq 1 and tcp.flags.ack eq 0` - Search **SYN-scan** (many same packets).
