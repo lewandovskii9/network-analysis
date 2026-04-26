@@ -71,3 +71,5 @@ This section contains all network traffic analysis write-ups. As the series prog
 
 All PCAP files are sourced from publicly available malware analysis platforms and used strictly for educational purposes.
 
+---
+*Return to [Main Portfolio](https://github.com/lewandovskii9)*
