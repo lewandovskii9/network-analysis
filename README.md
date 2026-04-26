@@ -55,22 +55,9 @@ This section contains all network traffic analysis write-ups. As the series prog
 
 ---
 
-## 📜 Certifications
-
-* CompTIA Security+ (expected August 2026)
-
----
-
-## 📬 Contact
-
-* LinkedIn: [Me](https://www.linkedin.com/in/aldiyar-bulat-194478403/)
-
----
-
 ## ⚠️ Disclaimer
 
 All PCAP files are sourced from publicly available malware analysis platforms and used strictly for educational purposes.
 
 ---
-[![Back to Profile](https://img.shields.io/badge/←_Back_to_Profile-333333?style=flat-square)](https://github.com/lewandovskii9)
-[![Back to Profile](https://img.shields.io/badge/←_Back_to_Profile-333333?style=plastic)](https://github.com/lewandovskii9)
+[![Back to Profile](https://img.shields.io/badge/←_Back_to_Profile-333333?style=plastic/github-repo-blue?logo=github)](https://github.com/lewandovskii9)
