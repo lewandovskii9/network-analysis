@@ -15,7 +15,7 @@ This repository contains a series of PCAP analysis write-ups. As the series prog
 
 ---
 
-## Tools
+## 🔧 Tools & Techniques
 
 * Wireshark (packet analysis, stream inspection)
 * VirusTotal (hash & IOC validation)
