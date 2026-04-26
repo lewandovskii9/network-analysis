@@ -21,7 +21,7 @@ This repository contains a series of PCAP analysis write-ups. As the series prog
 * VirusTotal (hash & IOC validation)
 * TCP stream / HTTP object analysis
 * NBNS, Kerberos, DNS investigation
-* [Wireshark filtration commands](./cheatsheets.md)
+* [Wireshark filtration commands](./cheatsheets/wireshark.md)
 
 ---
 
