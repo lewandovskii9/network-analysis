@@ -60,4 +60,4 @@ This section contains all network traffic analysis write-ups. As the series prog
 All PCAP files are sourced from publicly available malware analysis platforms and used strictly for educational purposes.
 
 ---
-[![Back to Profile](https://img.shields.io/badge/←_Back_to_Profile-333333?style=plastic/github-repo-blue?logo=github)](https://github.com/lewandovskii9)
+[![Back to Profile](https://img.shields.io/badge/BACK_TO_PROFILE-333333?style=plastic&logo=github&logoColor=white)](https://github.com/твой-ник)
