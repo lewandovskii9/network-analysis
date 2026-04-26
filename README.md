@@ -7,7 +7,7 @@ This repository contains a series of PCAP analysis write-ups. As the series prog
 
 ## 🛠 Technical Stack
 
-* Network traffic analysis (Wireshark)
+* Network traffic analysis
 * Malware infection detection
 * IOC extraction & enrichment
 * Timeline reconstruction
@@ -17,11 +17,11 @@ This repository contains a series of PCAP analysis write-ups. As the series prog
 
 ## 🔧 Tools & Techniques
 
-* Wireshark (packet analysis, stream inspection)
-* VirusTotal (hash & IOC validation)
-* TCP stream / HTTP object analysis
-* NBNS, Kerberos, DNS investigation
-* [Wireshark filtration commands](./cheatsheets/wireshark.md)
+* **Wireshark** (packet analysis, stream inspection)
+* **VirusTotal** (hash & IOC validation)
+* **TCP stream / HTTP object analysis**
+* **NBNS, Kerberos, DNS** investigation
+* [**Wireshark filtration commands**](./cheatsheets/wireshark.md)
 
 ---
 
@@ -63,7 +63,7 @@ This section contains all network traffic analysis write-ups. As the series prog
 
 ## 📬 Contact
 
-* LinkedIn: <https://www.linkedin.com/in/aldiyar-bulat-194478403/>
+* LinkedIn: [Me](https://www.linkedin.com/in/aldiyar-bulat-194478403/)
 
 ---
 
