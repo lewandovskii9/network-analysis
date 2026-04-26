@@ -1,4 +1,4 @@
-# SOC Network Analysis Portfolio
+# Network Analysis 
 
 Aspiring SOC Analyst focused on network traffic analysis and incident investigation.  
 This repository contains a series of PCAP analysis write-ups. As the series progresses, the write-ups demonstrate increasing depth, improved methodology, and a more professional approach to incident investigation, reflecting my growth in SOC-style reporting and malware analysis.
