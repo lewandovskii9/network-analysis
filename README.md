@@ -7,11 +7,11 @@ This repository contains a series of PCAP analysis write-ups. As the series prog
 
 ## 🛠 Technical Stack
 
-* Network traffic analysis
-* Malware infection detection
-* IOC extraction & enrichment
-* Timeline reconstruction
-* Basic incident response
+* **Network Traffic Analysis:** Deep packet inspection and stream reconstruction.
+* **Malware Detection:** Identifying infection vectors and C2 communication.
+* **IOC Extraction:** Harvesting and enriching indicators from network data.
+* **Timeline Reconstruction:** Building chronological maps of security incidents.
+* **Incident Response:** Applying basic triage and forensics to PCAP files.
 
 ---
 
