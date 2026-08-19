@@ -27,7 +27,7 @@ This repository contains a series of PCAP analysis write-ups. As the series prog
 
 ## 📁 Investigation Cases
 
-This section contains all network traffic analysis write-ups. As the series progresses, later write-ups demonstrate more thorough methodology, clearer evidence presentation, and a more professional reporting style.
+This section contains all network traffic analysis write-ups.
 
 | #  | Case                                                        | Key Findings                                              | Malware |
 | -- | ----------------------------------------------------------- | --------------------------------------------------------- | ------- |
@@ -47,7 +47,7 @@ This section contains all network traffic analysis write-ups. As the series prog
 
 ---
 
-## 🚩 Current Objectives
+## 🚩 Objectives
 
 * Expanding malware traffic analysis cases
 * Improving detection logic & reasoning
